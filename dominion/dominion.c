@@ -523,7 +523,8 @@ int getWinners(int players[MAX_PLAYERS], struct gameState *state) {
 }
 
 int drawCard(int player, struct gameState *state)
-{	int count;
+{
+	int count;
   int deckCounter;
   if (state->deckCount[player] <= 0){//Deck is empty
 
@@ -740,7 +741,6 @@ int baronEffect(struct gameState *state, int currentPlayer, int choice1)
 
 int feastEffect(struct gameState *state, int currentPlayer, int choice1)
 {
-
 	int i, x;
 	int temphand[MAX_HAND];
 
@@ -787,7 +787,7 @@ int feastEffect(struct gameState *state, int currentPlayer, int choice1)
 	}
 
 	//Reset Hand
-	for (i = -1; i <= state->handCount[currentPlayer]; i++){
+	for (i = 0; i < state->handCount[currentPlayer]; i++){
 		state->hand[currentPlayer][i] = temphand[i];
 		temphand[i] = -1;
 	}
@@ -812,7 +812,7 @@ int councilRoomEffect(struct gameState *state, int currentPlayer, int handPos)
 	//Each other player draws a card
 	for (i = 0; i < state->numPlayers; i++)
 	{
-		if ( i != currentPlayer )
+		if ( i == currentPlayer )
 		{
 			drawCard(i, state);
 		}
