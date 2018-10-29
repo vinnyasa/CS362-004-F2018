@@ -9,6 +9,7 @@
 #include "dominion.h"
 #include "dominion_helpers.h"
 #include <stdio.h>
+#include "testUtility.h"
 #include <assert.h>
 
 void testAdventurerEffect();
@@ -41,9 +42,11 @@ void testAdventurerEffect()
 
 	// test treasure cards branch
 	int successfulEffect = cardEffect(adventurer, 0, 0, 0, &state, 0, 0);
-	assert(gold == state.hand[currentPlayer][state.handCount[currentPlayer]-1]);
-	assert(silver == state.hand[currentPlayer][state.handCount[currentPlayer]-2]);
-	assert(0 == successfulEffect);
+	int goldCard = state.hand[currentPlayer][state.handCount[currentPlayer]-1]);
+	int silverCard = state.hand[currentPlayer][state.handCount[currentPlayer]-2];
+	myAssert(gold, goldCard, "adventureEffect()", "where card is treasure card");
+	myAssert(silver, silverCard, "adventureEffect()", "where card is treasure card");
+	myAssert(0, successfulEffect, "adventureEffect()", "where card is treasure card and succesfully finished");
 
 	//test no treasure cards branch
 	deckCount = 4;
@@ -58,12 +61,14 @@ void testAdventurerEffect()
 
 
 	successfulEffect = cardEffect(adventurer, 0, 0, 0, &state, 0, 0);
-	assert(gardens == state.discard[currentPlayer][0]);
-	assert(village == state.discard[currentPlayer][1]);
-	assert(silver == state.hand[currentPlayer][state.handCount[currentPlayer]-1]);
-	assert(copper == state.hand[currentPlayer][state.handCount[currentPlayer]-2]);
+	myAssert(gardens, state.discard[currentPlayer][0], "discardCount()", "where card is no treasure card");
+	myAssert(village, state.discard[currentPlayer][1], "discardCount()", "where card is no treasure card");
 
-	assert(0 == successfulEffect);
+	silverCard = state.hand[currentPlayer][state.handCount[currentPlayer]-1]);
+	int copperCard = state.hand[currentPlayer][state.handCount[currentPlayer]-2];
+	myAssert(silver, silverCard, "discardCount()", "where card is treasure card after two non treasures");
+	myAssert(copper, copperCard, "discardCount()", "where card is treasure card after two non treasures");
+	myAssert(0, successfulEffect, "discardCount()", "where card is not treasure card and successfully finished");
 
 }
 

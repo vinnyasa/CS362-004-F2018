@@ -10,7 +10,7 @@
 #include "dominion.h"
 #include "dominion_helpers.h"
 #include <stdio.h>
-#include <assert.h>
+#include "testUtility.h"
 
 void testGainCard();
 
@@ -28,29 +28,29 @@ void testGainCard()
 
 	//test failed
 	int failedGain = gainCard(2, &state, 0, 0);
-	assert(-1 == failedGain);
+	myAssert(-1, failedGain, "testGainCard()", " where failed to gain card");
 
 	state.supplyCount[2] = 3;
 
 	// test added to discard
 	int discarded = gainCard(2, &state, 0, 0);
 	state.discardCount[0] = 0;
-	assert(0 == discarded);
-	assert(1 == state.discardCount[0]);
+	myAssert(0, discarded, "testGainCard()", " where added to discard");
+	myAssert(1, state.discardCount[0], "testGainCard()", " where added to discard and against discard count");
 
 	//test added to deck
 	int toDeck = gainCard(2, &state, 1, 0);
 	state.deckCount[0] = 0;
-	assert(0 == toDeck);
-	assert(1 == state.deckCount[0]);
+	myAssert(0, toDeck, "testGainCard()", " where added to deck");
+	myAssert(1, state.deckCount[0], "testGainCard()", " where added to deck and against deck count");
 
 	//test added to hand
 	int toHand = gainCard(2, &state, 2, 0);
-	assert(0 == toHand);
-	assert(2 == state.handCount[0]);
+	myAssert(0, toHand, "testGainCard()", " where added to hand");
+	myAssert(2, state.handCount[0], "testGainCard()", " where added to hand and against hand count");
 
 	//test supplyCount decreased
-	assert(0 == state.supplyCount[2]);
+	myAssert(0, state.supplyCount[2], "testGainCard()", " where supply count to decrease");
 }
 
 

@@ -10,6 +10,7 @@
 #include "dominion.h"
 #include <stdio.h>
 #include <assert.h>
+#include "testUtility.h"
 
 int compare(const int* a, const int* b);
 void testCompare();
@@ -25,16 +26,17 @@ void testCompare()
 	int b = 5;
 
 	// test greater than
-	assert(1 == compare(&a, &b));
+	myAssert(1, compare(&a, &b), "testCompare()", "where greater than");
 
 	// test less than
 	a = 1;
 	b = 7;
-	assert(-1 == compare(&a, &b));
+	myAssert(-1, compare(&a, &b), "testCompare()", "where less than");
+	//assert(-1 == compare(&a, &b));
 
 	// test equal
 	a = 2;
 	b = 2;
-	assert(0 == compare(&a, &b));
+	myAssert(0, compare(&a, &b), "testCompare()", "where equal to");
 }
 

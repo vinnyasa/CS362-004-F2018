@@ -9,7 +9,7 @@
 #include "dominion.h"
 #include "dominion_helpers.h"
 #include <stdio.h>
-#include <assert.h>
+#include "testUtility.h"
 
 void testSmithyEffect();
 
@@ -20,6 +20,11 @@ int main () {
 
 /**
  *  +3 cards, discard Smithy.
+ *
+
+3. No state change should occur for other players.
+
+4. No state change should occur to the victory card piles and kingdom card piles
  **/
 
 void testSmithyEffect()
@@ -29,7 +34,7 @@ void testSmithyEffect()
 	int deckCount = 3;
 	int handPos = 0;
 
-	state.numPlayers = 1;
+	state.numPlayers = 2;
 	state.deckCount[currentPlayer] = deckCount;
 	state.handCount[currentPlayer] = 1;
 	state.hand[currentPlayer][handPos] = smithy;
@@ -41,11 +46,15 @@ void testSmithyEffect()
 	state.deck[currentPlayer][0] = gardens;
 
 	int successfulEffect = cardEffect(smithy, 0, 0, 0, &state, handPos, 0);
-	assert(gardens == state.hand[currentPlayer][0]);
-	assert(silver == state.hand[currentPlayer][1]);
-	assert(duchy == state.hand[currentPlayer][2]);
-	assert(smithy == state.playedCards[state.playedCardCount]);
-	assert(0 == successfulEffect);
+
+	myAssert(gardens, state.hand[currentPlayer][0], "smithyEffect()", " where cards get handed properly");
+	myAssert(silver, state.hand[currentPlayer][1], "smithyEffect()", " where cards get handed properly");
+	myAssert(duchy, state.hand[currentPlayer][2], "smithyEffect()", " where cards get handed properly");
+
+	myAssert(duchy, state.hand[currentPlayer][2], "smithyEffect()", " where smithy gets discarded properly");
+
+	myAssert(duchy, state.hand[currentPlayer][2], "smithyEffect()", " successfully ends");
+
 }
 
 

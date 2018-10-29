@@ -10,7 +10,8 @@
 #include "dominion.h"
 #include "dominion_helpers.h"
 #include <stdio.h>
-#include <assert.h>
+#include "testUtility.h"
+
 
 void testUpdateCoins();
 
@@ -27,34 +28,34 @@ void testUpdateCoins()
 
 	// test bonus
 	int updated = updateCoins(0, &state, 3);
-	assert(3 == state.coins);
-	assert(0 == updated);
+	myAssert(3, state.coins, "testUpdateCoins()", "where bonus passed in");
+	myAssert(0, updated, "testUpdateCoins()", "where bonus passed in and got updated");
 
 	state.handCount[0] = 1;
 
 	// test copper branch
 	state.hand[0][0] = copper;
 	int updated2 = updateCoins(0, &state, 0);
-	assert(1 == state.coins);
-	assert(0 == updated2);
+	myAssert(1, state.coins, "testUpdateCoins()", "where copper branch");
+	myAssert(0, updated2, "testUpdateCoins()", "where copper branch and got updated");
 
 	//test silver branch
 	state.hand[0][0] = silver;
 	int updated3 = updateCoins(0, &state, 0);
-	assert(2 == state.coins);
-	assert(0 == updated3);
+	myAssert(2, state.coins, "testUpdateCoins()", "where silver branch");
+	myAssert(0, updated3, "testUpdateCoins()", "where silver branch and got updated");
 
 	//test gold branch
 	state.hand[0][0] = gold;
 	int updated4 = updateCoins(0, &state, 1);
-	assert(4 == state.coins);
-	assert(0 == updated4);
+	myAssert(3, state.coins, "testUpdateCoins()", "where gold branch");
+	myAssert(0, updated4, "testUpdateCoins()", "where gold branch and got updated");
 
 	//test no gain
 	state.hand[0][0] = smithy;
 	int updated5 = updateCoins(0, &state, 0);
-	assert(0 == state.coins);
-	assert(0 == updated5);
+	myAssert(0, state.coins, "testUpdateCoins()", "where smithy card, no treasure");
+	myAssert(0, updated5, "testUpdateCoins()", "where smithy card, no treasure");
 
 }
 

@@ -10,6 +10,9 @@
 #include "dominion_helpers.h"
 #include <stdio.h>
 #include <assert.h>
+#include <stdbool.h>
+#include "testUtility.h"
+
 
 void testFeastEffect();
 
@@ -52,24 +55,29 @@ void testFeastEffect()
 
 	// test branch good choice
 	int successfulEffect = cardEffect(feast, goodChoice, 0, 0, &state, handPos, 0);
-	assert(0 == successfulEffect);
-	assert(2 == state.handCount[currentPlayer]);
+	myAssert(0, successfulEffect, "feastEffect()", "where function ends successfully");
+	myAssert(2, state.handCount[currentPlayer], "feastEffect()", "where hand count increments as it is supposed to with goodChoice");
 
 	// test was reset properly
-	assert(feast != state.hand[currentPlayer][0]);
-	assert(minion == state.hand[currentPlayer][state.hand[currentPlayer][state.handCount[currentPlayer] -1]]);
+	myAssert(0, successfulEffect, "feastEffect()", "where function ends successfully");
+	int minionGained = state.hand[currentPlayer][state.hand[currentPlayer][state.handCount[currentPlayer] -1]];
+	myAssert(minion, minionGained, "feastEffect()", "where card is gained succesfully");
 
+	int cardtrashed = feast != state.hand[currentPlayer][0];
+	printf("Feast no longer in hand: %d, should be true", cardtrashed);
 
 	// test branch no supply
 	successfulEffect = cardEffect(feast, noSupplyChoice, 0, 0, &state, handPos, 0);
-	assert(0 == successfulEffect);
-	assert(adventurer != state.hand[currentPlayer][state.handCount[currentPlayer] -1]);
+	int cardtNotGained = adventurer != state.hand[currentPlayer][state.handCount[currentPlayer] -1];
+	myAssert(0, successfulEffect, "feastEffect()", "where function ends successfully in no supply choice");
+	printf("Adventurer not in hand in hand: %d, should be true", cardtNotGained);
+
 
 	// test branch high cost
 	successfulEffect = cardEffect(feast, highChoice, 0, 0, &state, handPos, 0);
-	assert(0 == successfulEffect);
-	assert(gold != state.hand[currentPlayer][state.handCount[currentPlayer] -1]);
-
+	myAssert(0, successfulEffect, "feastEffect()", "where function ends successfully with high choice");
+	bool badCard = gold != state.hand[currentPlayer][state.handCount[currentPlayer] -1];
+	printf("Adventurer not in hand in hand: %d, should be true", badCard);
 }
 
 

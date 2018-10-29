@@ -9,7 +9,7 @@
 #include "dominion.h"
 #include "dominion_helpers.h"
 #include <stdio.h>
-#include <assert.h>
+#include "testUtility.h"
 
 void testCouncilRoomEffect();
 
@@ -51,19 +51,20 @@ void testCouncilRoomEffect()
 	state.deck[player2][4] = adventurer;
 
 
-
 	int successfulEffect = cardEffect(council_room, 0, 0, 0, &state, handPos, 0);
-	assert(0 == successfulEffect);
-	assert(4 == state.handCount[currentPlayer]);
-	assert(gardens == state.hand[currentPlayer][0]);
-	assert(silver == state.hand[currentPlayer][1]);
-	assert(duchy == state.hand[currentPlayer][2]);
-	assert(council_room == state.playedCards[state.playedCardCount]);
+
+	myAssert(0, successfulEffect, "councilRoomEffect()", " where function ends successfully");
+	myAssert(4, state.handCount[currentPlayer], "councilRoomEffect()", "where player gains the cards correctly");
+
+	myAssert(gardens, state.hand[currentPlayer][0], "councilRoomEffect()", "where player has the correct hand");
+	myAssert(silver, state.hand[currentPlayer][1], "councilRoomEffect()", "here player has the correct hand");
+	myAssert(duchy, state.hand[currentPlayer][2], "councilRoomEffect()", "here player has the correct hand");
+
+	myAssert(council_room, state.playedCards[state.playedCardCount], "councilRoomEffect()", "here player has the correct hand");
 
 	//test player2
-	assert(2 == state.handCount[player2]);
-	assert(adventurer == state.hand[player2][1]);
-
+	myAssert(2, state.handCount[player2], "councilEffect()", " where function ends successfully");
+	myAssert(adventurer, state.hand[player2][1], "councilRoomEffect()", "here player has the correct hand");
 }
 
 
