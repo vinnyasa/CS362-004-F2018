@@ -1,0 +1,29 @@
+CFLAGS= -Wall -fpic -coverage -lm -std=c99
+
+unittestresults: unittestresults.out
+
+unittestresults.out: unittest1.o dominion.o testUtility.o rngs.o
+gcc -c unittest1.c dominion.c testUtility.c rngs.c
+
+
+echo "Result for running unit tests:" > unittestresults.out
+echo "unittest1.c:" >> unittestresults.out
+	gcc -o unittest1 dominion.c -lm unittest1.c testUtility.c rngs.c $(CFLAGS)
+	./unittest1 >> unittestresults.out
+	gcov dominion.c >> unittestresults.out
+
+testUtility.o: testUtility.c testUtility.h
+gcc -c testUtility.c
+
+rngs.o: rngs.h rngs.c
+	gcc -c rngs.c -g  $(CFLAGS)
+
+dominion.o: dominion.h dominion.c rngs.o
+	gcc -c dominion.c -g  $(CFLAGS)
+
+
+clean:
+rm unittestresults.out unittestresults
+
+cleanall:
+	rm -f *.o *.gcov *.gcda *.gcno *.so *.out unitTest1
