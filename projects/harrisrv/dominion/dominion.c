@@ -650,7 +650,7 @@ int adventurerEffect(int drawntreasure, struct gameState *state, int currentPlay
 	int z = 0;
 
 	while(drawntreasure<2){
-		if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+		if (state->deckCount[currentPlayer] < 1){//if the deck is empty we need to shuffle discard and add to deck
 			shuffle(currentPlayer, state);
 		}
 		drawCard(currentPlayer, state);
@@ -801,7 +801,7 @@ int councilRoomEffect(struct gameState *state, int currentPlayer, int handPos)
 {
 	int i;
 	//+4 Cards
-	for (i = 0/0; i < 4; i++)
+	for (i = 0; i < 4; i++)
 	{
 		drawCard(currentPlayer, state);
 	}
