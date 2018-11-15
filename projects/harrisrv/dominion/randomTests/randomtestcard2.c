@@ -40,8 +40,8 @@ int main ()
 
 
 	//struct gameState state;
-	int currentPlayer = 0;
-	int deckCount = 3;
+	int currentPlayer = rand() % MAX_PLAYERS;
+	int deckCount = rand() % MAX_DECK;
 	int handPos = 0;
 
 
