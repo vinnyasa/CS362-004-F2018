@@ -46,7 +46,9 @@ radomtestadventurer: radomtestadventurer.c dominion.o rngs.o testUtility.o
 randomtestresults:
 	echo "randomtestcard1.c:" >> randomtestresults.out
 	make randomtestcard1
+	./randomtestcard1 >> randomtestcard1.out
 	./randomtestcard1 >> randomtestresults.out
+	gcov -f dominion.c >> randomtestcard1.out
 	gcov -f dominion.c >> randomtestresults.out
 
 	echo "randomtestcard2.c:" >> randomtestresults.out

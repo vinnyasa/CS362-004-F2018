@@ -30,7 +30,7 @@ int main () {
 	int topCards[ 5 ];
 	int failedTests = 0;
 	int testCount = 0;
-	//int players[2] = {currentPlayer, player2};
+
 
 	int k[10] = {adventurer, council_room, feast, gardens, mine,
 				 remodel, smithy, village, baron, great_hall};
@@ -39,11 +39,8 @@ int main () {
 
 
 	printf ("Testing council_room effect.\n");
-
 	printf ("RANDOM TESTS.\n");
 
-	//SelectStream(2);
-	//PutSeed(3);
 	int testRand = rand() % 48;
 	printf("testing rand %d", testRand);
 
@@ -72,10 +69,10 @@ int main () {
 		}
 		state.numBuys = rand() % MAX_DECK;
 		state.playedCardCount = rand() % MAX_DECK;
-		/* test below
+
 		do {
 			player2 = rand() % playersCount;
-		} while (currentPlayer == player2);
+		} while (currentPlayer == player2 && playersCount >= 2);
 
 		// initialize card count of all players
 
@@ -98,7 +95,8 @@ int main () {
 		state.handCount[player2]++;
 
 		failedTests += testCouncilRoomCard(&state, currentPlayer, player2, topCards, handPos, cpHandCount, p2HandCount);
-		testCount += 8; */
+
+		testCount += 8;
 	}
 
 	printf("Total tests: %d, ", testCount);

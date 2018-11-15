@@ -42,7 +42,7 @@ void testAdventurerEffect()
 
 	// test treasure cards branch
 	int successfulEffect = cardEffect(adventurer, 0, 0, 0, &state, 0, 0);
-	int goldCard = state.hand[currentPlayer][state.handCount[currentPlayer]-1]);
+	int goldCard = state.hand[currentPlayer][state.handCount[currentPlayer]-1];
 	int silverCard = state.hand[currentPlayer][state.handCount[currentPlayer]-2];
 	myAssert(gold, goldCard, "adventureEffect()", "where card is treasure card");
 	myAssert(silver, silverCard, "adventureEffect()", "where card is treasure card");
@@ -64,7 +64,7 @@ void testAdventurerEffect()
 	myAssert(gardens, state.discard[currentPlayer][0], "discardCount()", "where card is no treasure card");
 	myAssert(village, state.discard[currentPlayer][1], "discardCount()", "where card is no treasure card");
 
-	silverCard = state.hand[currentPlayer][state.handCount[currentPlayer]-1]);
+	silverCard = state.hand[currentPlayer][state.handCount[currentPlayer]-1];
 	int copperCard = state.hand[currentPlayer][state.handCount[currentPlayer]-2];
 	myAssert(silver, silverCard, "discardCount()", "where card is treasure card after two non treasures");
 	myAssert(copper, copperCard, "discardCount()", "where card is treasure card after two non treasures");

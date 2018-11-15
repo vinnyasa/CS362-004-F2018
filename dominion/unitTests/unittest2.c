@@ -44,7 +44,7 @@ void testGetCost()
 
 	myAssert(4, getCost(feast), "getCost()", " where card is feast");
 
-	myAssert(4, getCost(gardens), "getCost()", " where card is gardens);
+	myAssert(4, getCost(gardens), "getCost()", " where card is gardens");
 
 	myAssert(5, getCost(mine), "getCost()", " where card is mine");
 
