@@ -666,6 +666,9 @@ int adventurerEffect(int drawntreasure, struct gameState *state, int currentPlay
 	}
 	while(z-1>=0){
 		z-=1;
+		if (z<=0) {
+          return -1;
+		}
 		state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[z-1]; // discard all cards in play that have been drawn
 
 	}
