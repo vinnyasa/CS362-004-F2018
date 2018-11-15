@@ -29,9 +29,14 @@ runtests: testDrawCard
 	gcov dominion.c >> unittestresult.out
 	cat dominion.c.gcov >> unittestresult.out
 
+
+unittestresults: unittestresults.out
+
+unittestresults.out: unittest1.o dominion.o testUtility.o  rngs.o
+gcc -c unittest1.c dominion.c testUtility.c rngs.c
+
 testUtility.o: testUtility.h testUtility.c
 	gcc -c testUtility.c -g  $(CFLAGS)
-
 
 randomtestcard1: randomtestcard1.c dominion.o rngs.o testUtility.o
 	gcc -o randomtestcard1 -g  randomtestcard1.c dominion.o rngs.o testUtility.o $(CFLAGS)
@@ -42,24 +47,20 @@ randomtestcard2: randomtestcard2.c dominion.o rngs.o testUtility.o
 radomtestadventurer: radomtestadventurer.c dominion.o rngs.o testUtility.o
 	gcc -o radomtestadventurer -g  radomtestadventurer.c dominion.o rngs.o testUtility.o $(CFLAGS)
 
-
-randomtestresults:
-	echo "randomtestcard1.c:" >> randomtestresults.out
-	make randomtestcard1
+randomtestcard1.out: randomtestcard1.c playdom
 	./randomtestcard1 >> randomtestcard1.out
-	./randomtestcard1 >> randomtestresults.out
+	echo "GCOV After randomtestcard1" >> randomtestcard1.out
 	gcov -f dominion.c >> randomtestcard1.out
-	gcov -f dominion.c >> randomtestresults.out
 
-	echo "randomtestcard2.c:" >> randomtestresults.out
-	make randomtestcard2
-	./randomtestcard2 >> randomtestresults.out
-	gcov -f dominion.c >> randomtestresults.out
+randomtestcard2.out: randomtestcard2.c playdom
+	./randomtestcard2 >> randomtestcard2.out
+	echo "GCOV After randomtestcard2" >> randomtestcard2.out
+	gcov -f dominion.c >> randomtestcard2.out
 
-	echo "radomtestadventurer.c:" >> randomtestresults.out
-	make randomtestadventurer
-	./randomtestadventurer >> randomtestresults.out
-	gcov -f dominion.c >> randomtestresults.out
+randomtestadventurer.out: randomtestadventurer.c playdom
+	./randomtestadventurer >> randomtestadventurer.out
+	echo "GCOV After randomtestadventurer" >> randomtestadventurer.out
+	gcov -f dominion.c >> randomtestadventurer.out
 
 player: player.c interface.o
 	gcc -o player player.c -g  dominion.o rngs.o interface.o $(CFLAGS)

@@ -26,7 +26,7 @@ int main () {
 
 	srand(time(NULL));
 
-	int i, n, p, currentPlayer, player2, handPos, cpHandCount, p2HandCount, card;
+	int i, n, currentPlayer, player2, handPos, cpHandCount, p2HandCount, card;
 	int topCards[ 5 ];
 	int failedTests = 0;
 	int testCount = 0;
@@ -85,14 +85,14 @@ int main () {
 		for (i = 0; i < 4; i++) {
 			card = rand() % 10;
 			topCards[i] = k[card];
-			state.hand[currentPlayer][state.handCount[currentPlayer] - i] = card;
-			state.handCount[currentPlayer]++;
+			state.deck[currentPlayer][state.handCount[currentPlayer] - i] = card;
+			state.deckCount[currentPlayer]++;
 		}
 		card = rand() % 10;
 		printf("the value of i after loop %d", i);
 		topCards[i] = k[card];
-		state.hand[currentPlayer][state.handCount[player2] - i] = card;
-		state.handCount[player2]++;
+		state.deck[currentPlayer][state.handCount[player2] - i] = card;
+		state.deckCount[player2]++;
 
 		failedTests += testCouncilRoomCard(&state, currentPlayer, player2, topCards, handPos, cpHandCount, p2HandCount);
 
@@ -103,6 +103,8 @@ int main () {
 	printf("Successful: %d , Failed: %d\n", (testCount-failedTests), failedTests);
 
 	printf ("ALL TESTS OK\n");
+
+	return 0;
 }
 
 /**
@@ -124,15 +126,15 @@ int testCouncilRoomCard(struct gameState * state, int currentPlayer, int player2
 	failedTests += myAssert(cpHandCount+4, state->handCount[currentPlayer], "councilRoomEffect()", "where player gains the cards correctly");
 
 	for(int i = 0; i < 3; i++) {
-		failedTests += myAssert(cards[i], state->hand[currentPlayer][i], "councilRoomEffect()", "here player has the correct hand");
+		failedTests += myAssert(cards[i], state->hand[currentPlayer][i], "councilRoomEffect()", "where player has the correct hand");
 
 	}
 
-	failedTests += myAssert(council_room, state->playedCards[state->playedCardCount], "councilRoomEffect()", "here player has the correct hand");
+	failedTests += myAssert(council_room, state->playedCards[state->playedCardCount], "councilRoomEffect()", "where player has the correct hand");
 
 	//test player2
 	failedTests += myAssert(p2HandCount+1, state->handCount[player2], "councilEffect()", " where other players gain a card");
-	failedTests += myAssert(cards[4], state->hand[player2][p2HandCount-1], "councilRoomEffect()", "here player has the correct hand");
+	failedTests += myAssert(cards[4], state->hand[player2][p2HandCount-1], "councilRoomEffect()", "where player has the correct hand");
 
 	return failedTests;
 }

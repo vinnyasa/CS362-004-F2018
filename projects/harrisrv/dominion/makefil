@@ -6,6 +6,33 @@ unittestresults.out: unittest1.o dominion.o testUtility.o rngs.o
 gcc -c unittest1.c dominion.c testUtility.c rngs.c
 
 
+randomtestcard1: randomtestcard1.c dominion.o rngs.o testUtility.o
+	gcc -o randomtestcard1 -g  randomtestcard1.c dominion.o rngs.o testUtility.o $(CFLAGS)
+
+randomtestcard2: randomtestcard2.c dominion.o rngs.o testUtility.o
+	gcc -o randomtestcard2 -g  randomtestcard2.c dominion.o rngs.o testUtility.o $(CFLAGS)
+
+radomtestadventurer: radomtestadventurer.c dominion.o rngs.o testUtility.o
+	gcc -o radomtestadventurer -g  radomtestadventurer.c dominion.o rngs.o testUtility.o $(CFLAGS)
+
+
+randomtestresults:
+	echo "randomtestcard1.c:" >> randomtestresults.out
+	make randomtestcard1
+	./randomtestcard1 >> randomtestresults.out
+	gcov -f dominion.c >> randomtestresults.out
+
+	echo "randomtestcard2.c:" >> randomtestresults.out
+	make randomtestcard2
+	./randomtestcard2 >> randomtestresults.out
+	gcov -f dominion.c >> randomtestresults.out
+
+	echo "radomtestadventurer.c:" >> randomtestresults.out
+	make randomtestadventurer
+	./randomtestadventurer >> randomtestresults.out
+	gcov -f dominion.c >> randomtestresults.out
+
+
 echo "Result for running unit tests:" > unittestresults.out
 echo "unittest1.c:" >> unittestresults.out
 	gcc -o unittest1 dominion.c -lm unittest1.c testUtility.c rngs.c $(CFLAGS)
