@@ -16,6 +16,7 @@
  */
 
 import junit.framework.TestCase;
+import org.junit.Test;
 
 /**
  * Performs Validation Test for url validations.
@@ -39,6 +40,7 @@ protected void setUp() {
    }
 
    public void testIsValid() {
+
         testIsValid(testUrlParts, UrlValidator.ALLOW_ALL_SCHEMES);
         setUp();
 //        int options =
