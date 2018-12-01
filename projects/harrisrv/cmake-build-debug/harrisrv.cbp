@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="harrisrv"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="harrisrv">
+				<Option output="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/cmake-build-debug/harrisrv" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/dominion"/>
+					<Add directory="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/dominion/randomTests"/>
+					<Add directory="/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/cmake-build-debug/Makefile&quot;  VERBOSE=1 harrisrv"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="harrisrv/fast">
+				<Option output="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/cmake-build-debug/harrisrv" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/dominion"/>
+					<Add directory="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/dominion/randomTests"/>
+					<Add directory="/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/cmake-build-debug/Makefile&quot;  VERBOSE=1 harrisrv/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/README.md">
+			<Option target="harrisrv"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/dominion/Makefile">
+			<Option target="harrisrv"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/dominion/badTestDrawCard.c">
+			<Option target="harrisrv"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/dominion/betterTestDrawCard.c">
+			<Option target="harrisrv"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/dominion/dominion.c">
+			<Option target="harrisrv"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/dominion/dominion.h">
+			<Option target="harrisrv"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/dominion/dominion_helpers.h">
+			<Option target="harrisrv"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/dominion/interface.c">
+			<Option target="harrisrv"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/dominion/interface.h">
+			<Option target="harrisrv"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/dominion/playdom.c">
+			<Option target="harrisrv"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/dominion/player.c">
+			<Option target="harrisrv"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/dominion/randomTests/randomtestcard1.c">
+			<Option target="harrisrv"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/dominion/randomTests/randomtestcard2.c">
+			<Option target="harrisrv"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/dominion/randomTests/testUtility.c">
+			<Option target="harrisrv"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/dominion/randomTests/testUtility.h">
+			<Option target="harrisrv"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/dominion/rngs.c">
+			<Option target="harrisrv"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/dominion/rngs.h">
+			<Option target="harrisrv"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/dominion/rt.c">
+			<Option target="harrisrv"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/dominion/supplyTest.c">
+			<Option target="harrisrv"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/dominion/testBuyCard.c">
+			<Option target="harrisrv"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/dominion/testDrawCard.c">
+			<Option target="harrisrv"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/dominion/testInit.c">
+			<Option target="harrisrv"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/dominion/testShuffle.c">
+			<Option target="harrisrv"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,3 @@
+/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/cmake-build-debug/CMakeFiles/CS362_004_F2018.dir

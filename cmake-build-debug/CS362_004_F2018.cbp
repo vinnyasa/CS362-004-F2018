@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="CS362_004_F2018"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CS362_004_F2018">
+				<Option output="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/cmake-build-debug/CS362_004_F2018" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/dominion"/>
+					<Add directory="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/shaikj/dominion"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 CS362_004_F2018"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CS362_004_F2018/fast">
+				<Option output="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/cmake-build-debug/CS362_004_F2018" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/dominion"/>
+					<Add directory="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/shaikj/dominion"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 CS362_004_F2018/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/README.md">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/dominion/READM.md">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/dominion/badTestDrawCard.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/dominion/betterTestDrawCard.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/dominion/dominion.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/dominion/dominion.gcda">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/dominion/dominion.h">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/dominion/dominion_helpers.h">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/dominion/interface.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/dominion/interface.h">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/dominion/playdom.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/dominion/playdom.gcda">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/dominion/player.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/dominion/rngs.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/dominion/rngs.gcda">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/dominion/rngs.h">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/dominion/rt.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/dominion/supplyTest.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/dominion/testBuyCard.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/dominion/testDrawCard.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/dominion/testInit.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/dominion/testShuffle.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/dominion/unitTests/cardtest1.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/dominion/unitTests/cardtest2.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/dominion/unitTests/cardtest3.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/dominion/unitTests/cardtest4.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/dominion/unitTests/testUtility.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/dominion/unitTests/testUtility.h">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/dominion/unitTests/unittest1.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/dominion/unitTests/unittest2.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/dominion/unitTests/unittest3.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/dominion/unitTests/unittest4.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/README.md">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/README.md">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/dominion/randomTests/randomtestadventurer.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/dominion/randomTests/randomtestcard1.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/dominion/randomTests/randomtestcard2.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/dominion/randomTests/testUtility.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/harrisrv/dominion/randomTests/testUtility.h">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/shaikj/dominion/badTestDrawCard.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/shaikj/dominion/betterTestDrawCard.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/shaikj/dominion/dominion.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/shaikj/dominion/dominion.h">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/shaikj/dominion/dominion_helpers.h">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/shaikj/dominion/interface.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/shaikj/dominion/interface.h">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/shaikj/dominion/playdom.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/shaikj/dominion/player.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/shaikj/dominion/rngs.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/shaikj/dominion/rngs.h">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/shaikj/dominion/rt.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/shaikj/dominion/supplyTest.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/shaikj/dominion/testBuyCard.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/shaikj/dominion/testDrawCard.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/shaikj/dominion/testInit.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/projects/shaikj/dominion/testShuffle.c">
+			<Option target="CS362_004_F2018"/>
+		</Unit>
+		<Unit filename="/Users/Vinny/Effineering/OSU/CS362/CS362-004-F2018/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
